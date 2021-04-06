@@ -15,9 +15,11 @@
 git clone git@github.com:oasis-forever/typescript_tutorial.git
 ```
 
-## 4. TypeScript => JavaScript
+## 4. Run TypeScript
 
 ### 4-1. tsc
+
+`tsc` converts TypeScript to JavaScript and run the file.
 
 ```bash
 $ npx tsc
@@ -26,6 +28,8 @@ $ node ./lib/user_account.js
 ```
 
 ### 4-2. ts-node
+
+`ts-node` directly runs TypeScript file.
 
 ```bash
 $ npx ts-node ./lib/user_account.ts
