@@ -13,6 +13,3 @@ const UserAccount = class {
 };
 
 export { UserAccount };
-
-const user: User = new UserAccount(1, "User1");
-console.log(`ID: ${user.id}, Name: ${user.name}`);
