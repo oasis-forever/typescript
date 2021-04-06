@@ -7,6 +7,7 @@
 ## 2. Reference
 
 * [TypeScript](https://www.typescriptlang.org/)
+* [TypeScript + Node.js プロジェクトのはじめかた2020](https://qiita.com/notakaos/items/3bbd2293e2ff286d9f49)
 
 ### 3. Clone this repogitory
 
@@ -14,9 +15,26 @@
 git clone git@github.com:oasis-forever/typescript_tutorial.git
 ```
 
-## 4. JEST install for Unit Test
+## 4. TypeScript => JavaScript
 
-### 4-1. Build a Node.js project
+### 4-1. tsc
+
+```bash
+$ npx tsc
+$ node ./lib/user_account.js
+=> ID: 1, Name: User1
+```
+
+### 4-2. ts-node
+
+```bash
+$ npx ts-node ./lib/user_account.ts
+=> ID: 1, Name: User1
+```
+
+## 5. JEST install for Unit Test
+
+### 5-1. Build a Node.js project
 
 ```bash
 $ npm init
@@ -24,19 +42,19 @@ $ npm init
 
 You will be asked some questions, but just keep tapping "Enter" key.
 
-### 4-2. Install required packages
+### 5-2. Install required packages
 
 ```bash
 $ npm install --save-dev jest babel-jest babel-core @babel/core @babel/preset-env
 ```
 
-### 4-3. Install a plugin with babel to convert JEST to CommonJS
+### 5-3. Install a plugin with babel to convert JEST to CommonJS
 
 ```bash
 $ npm install --save-dev jest babel-jest
 ```
 
-### 4-4. Run a unittest
+### 5-4. Run a unittest
 
 To execuate all unittests, run `npx jest`.
 
