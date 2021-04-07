@@ -15,4 +15,4 @@ const greet = (index: number) => {
 
 export {
   greet
-}
+};
