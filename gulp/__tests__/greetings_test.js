@@ -4,7 +4,7 @@ import {
   greet
 } from "../dist/greetings";
 
-test("greetFromCompiler", () => {
+test("greet", () => {
   const greeting_1 = greet(0);
   const greeting_2 = greet(1);
   const greeting_3 = greet(2);
