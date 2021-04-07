@@ -1,13 +1,8 @@
 const gulp = require("gulp");
-const ts = require("gulp-typescript");
 const browserify = require("browserify");
 const source = require("vinyl-source-stream");
 const tsify = require("tsify");
 const paths = { pages: ["./src/*.html"] };
-const tsProject = ts.createProject("tsconfig.json");
-gulp.task("default", () => {
-  return tsProject.src().pipe(tsProject()).js.pipe(gulp.dest("dist"));
-});
 gulp.task("copy-html", () => {
   return gulp.src(paths.pages).pipe(gulp.dest("dist"));
 });
